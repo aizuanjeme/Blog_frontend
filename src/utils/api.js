@@ -66,7 +66,6 @@ const Account = {
         window.localStorage.setItem('account', JSON.stringify(_user));
         token = _user.token;
     },
-
     logout: () => {
         window.localStorage.removeItem('account')
         token = null
@@ -82,7 +81,6 @@ const Account = {
 const api = {
     Account,
     setToken: _token => { token = _token; },
-  }
-  
-  export default api;
-  
+}
+
+export default api;
