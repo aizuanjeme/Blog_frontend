@@ -35,7 +35,7 @@ export default function Register() {
         Setpassword(password ? false : true);
     };
 
-    const registerUser = async (signupData) => {
+    const registerUser = async () => {
         // setLoading(true);
         const payload = {
             password:item.password,
