@@ -1,0 +1,45 @@
+#layoutAuthentication .login {
+    padding: 7rem 0 3rem 0;
+}
+
+.bg-login {
+    background-color: #0a495d !important;
+}
+
+form .form-label {
+    font-weight: 700;
+}
+
+.navbar-brand .app-name-white {
+    display: none;
+}
+
+.navbar-brand .big-logo {
+    display: block;
+    margin-left: -17px;
+}
+
+ 
+
+#login-logo-beta {
+    vertical-align: top;
+    font-size: .5rem;
+    margin-left: -97px;
+    margin-top: -1px;
+    padding: 4px;
+  }
+
+@media screen and (max-width: 760px) {
+    .navbar-brand .big-logo {
+        display: none;
+        margin-left: -17px;
+    }
+
+    .navbar-brand .app-name-white {
+        display: block;
+    }
+}
+
+/* .container{
+    height: max-content;
+} */

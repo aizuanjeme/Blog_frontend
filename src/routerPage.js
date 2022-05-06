@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import Login from './pages/login/Login';
 import Register from './pages/register/register';
 
 
@@ -9,6 +10,7 @@ export default function RouterPage() {
             <BrowserRouter>
                 <Switch>
                     <Route exact path="/register" component={Register} />
+                    <Route exact path="/login" component={Login} />
                 </Switch>
             </BrowserRouter>
     )

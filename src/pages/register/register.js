@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./register.css";
@@ -48,13 +48,9 @@ export default function Register() {
         try {
             const r = await api.Account.register(payload)
             console.log("signupData", payload);
-            // notifySuccess(r.sucessMessage)
-            // setLoading(true);
-            // history.push('/')
         }
         catch (error) {
             console.log(error);
-            // setLoading(false);
         }
     }
 
@@ -66,12 +62,8 @@ export default function Register() {
                         <div className="card shadow ">
                             <div className="card-body p-6">
                                 <div className="mb-4">
-                                    {/* <Link to={"/"} className="mb-2 font-weight-bold">
-                    <AppLogo />
-                  </Link> */}
                                     <Link className="mb-2 font-weight-bold" to={"/"} id="login-logo" >
                                         <img className="" src="../../favicon.ico" alt="logo" />
-                                        {/* <span className="badge badge-warning text-white" id="login-logo-beta">BETA</span> */}
                                     </Link>
 
                                     <hr />
@@ -213,8 +205,8 @@ export default function Register() {
                                     </div>
                                     <div className="py-2">
                                         <span className="font-weight-smaller">
-                                            Don’t have an account?{" "}
-                                            <Link to="/register" className="ml-1">
+                                            Have an Account?{" "}
+                                            <Link to="/login" className="ml-1">
                                                 Sign up
                                             </Link>
                                         </span>
