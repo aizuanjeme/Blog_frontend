@@ -1,0 +1,1223 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sliderimg{
+  width: 100%;
+  height: 500px;
+  object-fit: cover
+}
+
+.d-table {
+  width: 100%;
+  height: 100%;
+}
+
+.d-table-cell {
+  vertical-align: middle;
+}
+
+a {
+  color: #0e314c;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: 0 !important;
+}
+
+a:hover {
+  color: #ee0979;
+  text-decoration: none;
+}
+
+.ptb-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.bg-f7fafd {
+  background-color: #f7fafd;
+}
+
+h1, h2, h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #6084a4;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+
+/*section-title*/
+.section-title {
+  text-align: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: -9px;
+}
+
+.section-title h2 {
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/*form-control*/
+
+/*================================================
+Preloader Area CSS
+=================================================*/
+
+/*================================================
+Navbar Area CSS
+=================================================*/
+.luvion-responsive-nav {
+  display: none;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar-brand img:nth-child(2) {
+  display: none;
+}
+
+.luvion-nav {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.luvion-nav .navbar {
+  padding-right: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.luvion-nav .navbar ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.luvion-nav .navbar .navbar-nav {
+  font-family: "Raleway", sans-serif;
+  margin-left: auto;
+}
+
+.luvion-nav .navbar .navbar-nav .nav-item {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.luvion-nav .navbar .navbar-nav .nav-item a {
+  font-size: 17px;
+  font-weight: 500;
+  color: #e5e1e1;
+  text-transform: capitalize;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.luvion-nav .navbar .navbar-nav .nav-item a:hover, .luvion-nav .navbar .navbar-nav .nav-item a:focus {
+  color: #ffffff;
+}
+
+.luvion-nav .navbar .navbar-nav .nav-item:last-child a {
+  margin-right: 0;
+}
+
+.luvion-nav .navbar .navbar-nav .nav-item:first-child a {
+  margin-left: 0;
+}
+
+.luvion-nav .navbar .navbar-nav .nav-item:hover a {
+  color: #ffffff;
+}
+
+.luvion-nav .navbar .others-options {
+  margin-left: 25px;
+}
+
+.luvion-nav .navbar .others-options .login-btn {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+.luvion-nav .navbar .others-options .login-btn i {
+  margin-right: 2px;
+  color: #eae563;
+}
+
+.luvion-nav .navbar .others-options .login-btn:hover {
+  color: #ffffff;
+}
+
+.navbar-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .luvion-responsive-nav {
+    display: block;
+  }
+  .luvion-responsive-nav .luvion-responsive-menu {
+    position: relative;
+  }
+  .luvion-responsive-nav .logo {
+    position: relative;
+    width: 50%;
+    z-index: 999;
+  }
+  .luvion-responsive-nav .logo a img:nth-child(2) {
+    display: none;
+  }
+  .navbar-area {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .luvion-nav {
+    display: none;
+  }
+}
+
+/*================================================
+Main Banner Area CSS
+=================================================*/
+.main-banner {
+  height: 100vh;
+  /* background-image: url(/../assets/images/main-banner1.jpg); */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-banner-content {
+  margin-top: -20px;
+  max-width: 600px;
+}
+
+.main-banner-content h1 {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.main-banner-content p {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.main-banner-content .btn {
+  margin-top: 30px;
+}
+
+.main-banner-section {
+  height: 800px;
+  /* background-image: url(/../assets/images/main-banner2.jpg); */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-content {
+  margin-top: -50px;
+}
+
+.banner-content h1 {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.banner-content p {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.banner-content .btn {
+  margin-top: 30px;
+}
+
+/*================================================
+About Area CSS
+=================================================*/
+
+/*================================================
+Featured Boxes Area CSS
+=================================================*/
+.featured-boxes-area {
+  position: relative;
+  z-index: 1;
+  margin-top: -100px;
+}
+
+.featured-boxes-inner {
+  background-color: #ffffff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.featured-boxes-inner .col-lg-3 {
+  border-right: 1px solid #eeeeee;
+}
+
+.featured-boxes-inner .col-lg-3:last-child {
+  border-right: none;
+}
+
+.single-featured-box {
+  text-align: center;
+  position: relative;
+  padding: 115px 25px 40px 25px;
+  overflow: hidden;
+}
+
+.single-featured-box .icon {
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: #ee0979;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin-top: -12px;
+}
+
+.single-featured-box .icon i::before {
+  font-size: 55px;
+}
+
+.single-featured-box .icon.color-fb7756 {
+  color: #fb7756;
+}
+
+.single-featured-box .icon.color-facd60 {
+  color: #facd60;
+}
+
+.single-featured-box .icon.color-1ac0c6 {
+  color: #1ac0c6;
+}
+
+.single-featured-box h3 {
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.single-featured-box:hover .icon {
+  top: 23px;
+  -webkit-animation: iconTop 0.4s ease-in-out;
+          animation: iconTop 0.4s ease-in-out;
+}
+
+.single-featured-box:hover h3 {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+@-webkit-keyframes iconTop {
+  0% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@keyframes iconTop {
+  0% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+/*================================================
+Services Area CSS
+=================================================*/
+.services-area {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.overview-box {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center !important;
+  -webkit-box-align: center !important;
+          align-items: center !important;
+}
+
+.overview-box .overview-content {
+  -ms-flex: 0 0 50%;
+  -webkit-box-flex: 0;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.overview-box .overview-content .content {
+  max-width: 555px;
+  padding-left: 50px;
+}
+
+.overview-box .overview-content .content.left-content {
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 0;
+}
+
+.overview-box .overview-content .content h2 {
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.overview-box .overview-content .content .bar {
+  height: 5px;
+  width: 90px;
+  background: #cdf1d8;
+  margin: 20px 0 25px;
+  position: relative;
+  border-radius: 30px;
+}
+
+.overview-box .overview-content .content .bar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -2.7px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #44ce6f;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: MOVE-BG;
+          animation-name: MOVE-BG;
+}
+
+.overview-box .overview-content .content .btn {
+  margin-top: 30px;
+}
+
+.overview-box .overview-image {
+  -ms-flex: 0 0 50%;
+  -webkit-box-flex: 0;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.overview-box .overview-image .image {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.overview-box .overview-image .image .circle-img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+  right: 0;
+  margin: 0 auto;
+}
+
+.overview-box .overview-image .image .circle-img img {
+  -webkit-animation-name: rotateMe;
+          animation-name: rotateMe;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(88px);
+            transform: translateX(88px);
+  }
+}
+
+@keyframes MOVE-BG {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(88px);
+            transform: translateX(88px);
+  }
+}
+
+@-webkit-keyframes rotateMe {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateMe {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*================================================
+Comparisons Area CSS
+=================================================*/
+
+/*================================================
+Features Area CSS
+=================================================*/
+
+.features-box-list {
+  margin-left: auto;
+  max-width: 425px;
+}
+
+.features-box-list .col-lg-12:last-child .features-box {
+  margin-bottom: 0;
+}
+
+.features-box {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-right: 25px;
+  padding-left: 110px;
+}
+
+.features-box .icon {
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+  background-color: rgba(231, 70, 69, 0.2);
+  border-radius: 50%;
+  color: #ee0979;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  left: 25px;
+  top: 35px;
+}
+
+.features-box .icon i::before {
+  font-size: 30px;
+}
+
+.features-box .icon.bg-f78acb {
+  background-color: rgba(247, 138, 203, 0.3);
+  color: #f78acb;
+}
+
+.features-box .icon.bg-cdf1d8 {
+  background-color: #cdf1d8;
+  color: #44ce6f;
+}
+
+.features-box .icon.bg-c679e3 {
+  color: #c679e3;
+  background: #edc3fc;
+}
+
+.features-box h3 {
+  margin-bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.features-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ee0979), to(#ff6a00));
+  background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.features-box:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.features-box:hover::before {
+  width: 100%;
+}
+
+.features-box:hover .icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  color: #ee0979;
+  background-color: #ffffff;
+}
+
+.features-box:hover h3 {
+  color: #ffffff;
+}
+
+.features-image {
+  text-align: center;
+}
+
+/*================================================
+How It Works Area CSS
+=================================================*/
+
+/*================================================
+Team Area CSS
+=================================================*/
+
+/*================================================
+Invoicing Area CSS
+=================================================*/
+
+/*================================================
+Information Area CSS
+=================================================*/
+
+/*================================================
+Pricing Area CSS
+=================================================*/
+
+/*================================================
+FunFacts Area CSS
+=================================================*/
+
+/*================================================
+Feedback Area CSS
+=================================================*/
+
+/*================================================
+Ready To Talk Area CSS
+=================================================*/
+
+/*================================================
+Partner Area CSS
+=================================================*/
+
+/*================================================
+App Download Area CSS
+=================================================*/
+.app-download-area {
+  padding-top: 95px;
+  padding-bottom: 50px;
+}
+
+.app-image {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+
+.app-image .main-image img:nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.app-image .main-mobile-image {
+  display: none;
+}
+
+.app-image .circle-img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  z-index: -1;
+  right: 0;
+  margin: 0 auto;
+}
+
+.app-image .circle-img img {
+  -webkit-animation-name: rotateMe;
+          animation-name: rotateMe;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.app-download-content {
+  padding-left: 20px;
+}
+
+.app-download-content h2 {
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.app-download-content .bar {
+  height: 5px;
+  width: 90px;
+  background: #cdf1d8;
+  margin: 20px 0 25px;
+  position: relative;
+  border-radius: 30px;
+}
+
+.app-download-content .bar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -2.7px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #44ce6f;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: MOVE-BG;
+          animation-name: MOVE-BG;
+}
+
+.app-download-content p {
+  margin-bottom: 0;
+}
+
+.app-download-content .btn-box {
+  margin-top: 25px;
+}
+
+.app-download-content .btn-box .app-store-btn {
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  padding: 12px 25px 12px 60px;
+  font-size: 12px;
+}
+
+.app-download-content .btn-box .app-store-btn i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.app-download-content .btn-box .app-store-btn i::before {
+  font-size: 35px;
+}
+
+.app-download-content .btn-box .app-store-btn span {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.app-download-content .btn-box .app-store-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, right top, from(#ee0979), to(#ff6a00));
+  background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.app-download-content .btn-box .app-store-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  z-index: -1;
+  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.app-download-content .btn-box .app-store-btn:hover {
+  color: #ffffff;
+}
+
+.app-download-content .btn-box .app-store-btn:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.app-download-content .btn-box .app-store-btn:hover::before {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.app-download-content .btn-box .play-store-btn {
+  margin-left: 12px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  padding: 12px 25px 12px 60px;
+  font-size: 12px;
+}
+
+.app-download-content .btn-box .play-store-btn i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.app-download-content .btn-box .play-store-btn i::before {
+  font-size: 35px;
+}
+
+.app-download-content .btn-box .play-store-btn span {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.app-download-content .btn-box .play-store-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, right top, from(#ee0979), to(#ff6a00));
+  background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.app-download-content .btn-box .play-store-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  z-index: -1;
+  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.app-download-content .btn-box .play-store-btn:hover {
+  color: #ffffff;
+}
+
+.app-download-content .btn-box .play-store-btn:hover::after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.app-download-content .btn-box .play-store-btn:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*================================================
+Account Create Area CSS
+=================================================*/
+.account-create-area {
+  position: relative;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, right top, from(#ee0979), to(#ff6a00));
+  background: linear-gradient(90deg, #ee0979 0%, #ff6a00 100%);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.account-create-area::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .20;
+  height: 100%;
+  z-index: -1;
+  /* background-image: url(../../assets/img/bg_lines.svg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200%;
+}
+
+.account-create-content {
+  text-align: center;
+}
+
+.account-create-content h2 {
+  color: #ffffff;
+  max-width: 530px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.account-create-content .btn-primary {
+  margin-top: 30px;
+  padding: 16px 30px;
+}
+
+.account-create-content .btn-primary::before {
+  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
+}
+
+.account-create-content .btn-primary::after {
+  background: #ffffff;
+}
+
+.account-create-content .btn-primary:hover, .account-create-content .btn-primary:focus {
+  color: #0e314c !important;
+}
+
+/*================================================
+Blog Area CSS
+=================================================*/
+
+/*================================================
+Blog Details Area CSS
+=================================================*/
+
+/*================================================
+Page Title Area CSS
+=================================================*/
+
+/*================================================
+Pagination Area CSS
+=================================================*/
+
+/*================================================
+Widget Sidebar Area CSS
+=================================================*/
+
+/*================================================
+404 Error Area CSS
+=================================================*/
+
+/*================================================
+FAQ Area CSS
+=================================================*/
+
+/*================================================
+Login Area CSS
+=================================================*/
+
+/*================================================
+Signup Area CSS
+=================================================*/
+
+/*================================================
+Contact Area CSS
+=================================================*/
+
+/*================================================
+Footer Area CSS
+=================================================*/
+.footer-area {
+  position: relative;
+  z-index: 1;
+  padding-top: 70px;
+  background-color: #f7fafd;
+}
+
+.single-footer-widget {
+  margin-bottom: 30px;
+}
+
+.single-footer-widget .logo a {
+  display: block;
+}
+
+.single-footer-widget .logo p {
+  font-size: 14.5px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.single-footer-widget h3 {
+  margin-bottom: 24px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.single-footer-widget .list {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.single-footer-widget .list li {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14.5px;
+}
+
+.single-footer-widget .list li a {
+  color: #6084a4;
+  display: inline-block;
+}
+
+.single-footer-widget .list li a:hover {
+  padding-left: 5px;
+  color: #ee0979;
+}
+
+.single-footer-widget .list li:last-child {
+  margin-bottom: 0;
+}
+
+.single-footer-widget .footer-contact-info {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.single-footer-widget .footer-contact-info li {
+  position: relative;
+  color: #6084a4;
+  margin-bottom: 8px;
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 14.5px;
+}
+
+.single-footer-widget .footer-contact-info li a {
+  color: #6084a4;
+  display: inline-block;
+}
+
+.single-footer-widget .footer-contact-info li a:hover {
+  color: #ee0979;
+}
+
+.single-footer-widget .footer-contact-info li:last-child {
+  margin-bottom: 0;
+}
+
+.single-footer-widget .footer-contact-info li span {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.single-footer-widget .social-links {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 13px;
+  margin-bottom: 0;
+}
+
+.single-footer-widget .social-links li {
+  margin-right: 2px;
+  display: inline-block;
+}
+
+.single-footer-widget .social-links li a {
+  width: 30px;
+  text-align: center;
+  line-height: 29px;
+  height: 30px;
+  border: 1px solid #ece9e9;
+  border-radius: 50%;
+  color: #ee0979;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.single-footer-widget .social-links li a:hover {
+  color: #ffffff;
+  border-color: #ee0979;
+  background-color: #ee0979;
+}
+
+.copyright-area {
+  border-top: 1px solid #d8ebfd;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.copyright-area p {
+  font-size: 14.5px;
+}
+
+.copyright-area p a {
+  display: inline-block;
+  color: #0e314c;
+  font-weight: 400;
+}
+
+.copyright-area p a:hover {
+  color: #ee0979;
+}
+
+.map-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0 auto;
+  text-align: center;
+  z-index: -1;
+  opacity: .7;
+}
+
+.map-image img {
+  max-width: 40%;
+}
