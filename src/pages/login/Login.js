@@ -22,7 +22,7 @@ const Login = () => {
             Setloading(true)
             const response = await api.Account.login(email, password);
             Setloading(false);
-            await api.Account.saveAuthData(response.data)
+            await api.Account.saveAuthData(response)
         }
         catch (error) {
             console.log(error)

@@ -3,13 +3,14 @@ import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-export const API_ROOT = 'http://localhost:4000/';  //LOCAL SERVER
+// export const API_ROOT = 'http://localhost:4000/';  //LOCAL SERVER
+export const API_ROOT = 'https://stephblog-api.herokuapp.com/';  //TESTING SERVER
 
 let token = null;
 const responseBody = res => res.body;
 
 const getAuthToken = () => {
-    const auth = JSON.parse(window.localStorage.getItem('auth'));
+    const auth = JSON.parse(window.localStorage.getItem('account'));
     const token = auth ? auth.token : null;
     return token;
 }
@@ -32,7 +33,7 @@ export const tokenPlugin = req => {
         if (res.status === 401) {
             // redirect to login page here
             localStorage.setItem("lastAccessedUrl", window.location.pathname);
-            window.location.href = `${window.location.origin}/signin`;
+            window.location.href = `${window.location.origin}/login`;
 
         }
         if (res.body.error) {
@@ -76,10 +77,16 @@ const Account = {
         requests.post('account/register', data),
 }
 
-
+const Blog = {
+    save: (data) =>
+        requests.post(`blogs`, data),
+    load: () =>
+        requests.get(`blogs`)
+}
 
 const api = {
     Account,
+    Blog,
     setToken: _token => { token = _token; },
 }
 

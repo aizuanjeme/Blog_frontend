@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react'
+import React, { createContext, useEffect, useState, Suspense } from 'react'
 import './App.css';
 import AppLoading from './component/AppLoading';
 import RouterPage from './routerPage';
@@ -8,9 +8,9 @@ function App() {
 
   return (
     
-      <React.Suspense fallback={<AppLoading />}>
+      <Suspense fallback={<AppLoading />}>
         <RouterPage />
-      </React.Suspense>  
+      </Suspense>  
   );
 }
 
