@@ -14,7 +14,7 @@ export default function RouterPage() {
                 <Switch>
                     <Route exact path="/register" component={Register} />
                     <Route path="/login" exact component={Login} />
-                    <Route path="/" exact component={LandingPage} />
+                    <Route exact path="/" component={LandingPage} />
                 </Switch>
             </BrowserRouter>
     )
