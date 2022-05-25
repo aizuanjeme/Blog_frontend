@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./login.css";
 import api from "../../utils/api";
 
 const Login = () => {
+    const history = useHistory()
     const { handleSubmit, register, formState: { errors }, getValues } = useForm();
     const [password, Setpassword] = useState(false);
     const [loading, Setloading] = useState(false);
@@ -23,6 +24,7 @@ const Login = () => {
             const response = await api.Account.login(email, password);
             Setloading(false);
             await api.Account.saveAuthData(response)
+            history.push("/")
         }
         catch (error) {
             console.log(error)

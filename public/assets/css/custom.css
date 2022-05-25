@@ -1,0 +1,30 @@
+.custom-container {
+  width: 80%;
+  margin: auto;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(117 79 254 / 25%);
+}
+
+@media screen and (max-width: 1024px) {
+  .custom-container {
+    width: 90%;
+  }
+}
+
+/* sidebar, dropdown item text color and background */
+/* .small-sidenav.navbar .navbar-nav .active>.nav-link  , .small-sidenav.navbar .navbar-nav .active>.nav-link:hover, .custom-text-color, .dropdown-item:hover  {
+  color: #158e6c!important;
+}
+
+.lighter-custom-color-text, a:hover .text-primary-hover{
+  color: #60b69d!important;
+}
+
+.small-sidenav.navbar .navbar-nav .nav-item.active, .small-sidenav.navbar .navbar-nav .nav-item .nav-link:hover, .custom-text-background, .dropdown-item:hover {
+  background-color: #19cb982b;
+  color: #158e6c!important;
+} */
