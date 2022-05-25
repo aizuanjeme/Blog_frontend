@@ -123,7 +123,7 @@ export default function LandingPage() {
             )}
           </div>
 
-          {blogs && blogs?.length === 0 && (
+          {blogs?.length === 0 && (
             <div className="text-pink font-weight-bold">No Blogs Found</div>
           )}
         </div>
