@@ -660,11 +660,11 @@ Page Title Area CSS
 
 /* .page-title-area.item-bg1 {
   /* background-image: url(/public/assets/images/page-title-bg1.jpg); */
-/* } */ */
+/* } */
 
 /* .page-title-area.item-bg2 {
   /* background-image: url(/../assets/images/page-title-bg2.jpg); */
-/* } */ */
+/* } */
 
 .page-title-content {
   text-align: center;
@@ -997,7 +997,7 @@ Widget Sidebar Area CSS
 
 /* .widget-area .widget_luvion_posts_thumb .item .thumb .fullimage.bg3 { */
   /* background-image: url(/../assets/images/3.jpg); */
-/* } */ */
+/* } */ 
 
 .widget-area .widget_luvion_posts_thumb .item .info {
   overflow: hidden;
