@@ -198,16 +198,11 @@ export default function Register() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="d-lg-flex justify-content-between align-items-center mb-2">
-                                        <div>
-                                            <Link to="forgot-password">Forgot your password?</Link>
-                                        </div>
-                                    </div>
                                     <div className="py-2">
                                         <span className="font-weight-smaller">
                                             Have an Account?{" "}
                                             <Link to="/login" className="ml-1">
-                                                Sign up
+                                                Sign in
                                             </Link>
                                         </span>
                                     </div>
