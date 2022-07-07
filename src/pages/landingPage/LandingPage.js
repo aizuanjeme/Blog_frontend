@@ -4,6 +4,7 @@ import moment from "moment";
 import { Link } from "react-router-dom";
 import { addThreeDots } from '../../utils/converter';
 import './LandingPage.css';
+import AnonymousHeader from '../../component/anonymous_header/anonymousHeader';
 
 export default function LandingPage() {
   const [blogs, setBlogs] = useState([]);
@@ -21,6 +22,7 @@ export default function LandingPage() {
   console.log({ blogs })
   return (
     <>
+    <AnonymousHeader/>
       <div
         className="page-title-area item-bg2 jarallax"
         data-jarallax='{"speed": 0.3}'
@@ -69,9 +71,9 @@ export default function LandingPage() {
                       </div>
 
                       <div className="blog-post-content">
-                        <h3 className="mb-n4">
+                        <h5 className="mb-n4">
                           <Link to={`/blogs/${blog.id}`}>{blog?.title}</Link>
-                        </h3>
+                        </h5>
 
                         <span>
                           {blog?.author?.firstName && (
