@@ -23,7 +23,7 @@ const Login = () => {
             Setloading(true)
             const response = await api.Account.login(email, password);
             Setloading(false);
-            await api.Account.saveAuthData(response)
+            await api.Account.saveAuthData(response.data)
             history.push("/")
         }
         catch (error) {
