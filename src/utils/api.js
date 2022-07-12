@@ -81,7 +81,9 @@ const Blog = {
     save: (data) =>
         requests.post(`blogs`, data),
     load: () =>
-        requests.get(`blogs`)
+        requests.get(`blogs`),
+    view: (id) =>
+        requests.get(`blogs/${id}`)
 }
 
 const api = {
