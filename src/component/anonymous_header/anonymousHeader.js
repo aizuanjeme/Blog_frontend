@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./anonymousHeader.css";
 import api from "../../utils/api";
 
 const AnonymousHeader = () => {
-
+const history = useHistory()
     const logout = () => {
-        api.Auth.logout();
-        // dispatch(push("/login"));
+        api.Account.logout();
+        window.location.reload();
+        history("/")
     };
 
     const authenticated = api.Account.isAuth();
