@@ -72,7 +72,7 @@ export default function LandingPage() {
 
                       <div className="blog-post-content">
                         <h5 className="mb-n4">
-                          <Link to={`/blogs/${blog.id}`}>{blog?.title}</Link>
+                          <Link to={`/blog/${blog.id}`}>{blog?.title}</Link>
                         </h5>
 
                         <span>
@@ -91,7 +91,7 @@ export default function LandingPage() {
                           style={{ fontSize: "1rem", lineHeight: "1" }}
                         ></h6>
 
-                        <Link to={`/blogs/${blog.id}`} className="read-more-btn">
+                        <Link to={`/blog/${blog.id}`} className="read-more-btn">
                           Read More <i className="fas fa-arrow-right"></i>
                         </Link>
                       </div>
