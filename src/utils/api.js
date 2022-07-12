@@ -3,8 +3,8 @@ import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-export const API_ROOT = 'http://localhost:4000/';  //LOCAL SERVER
-// export const API_ROOT = 'https://stephblog-api.herokuapp.com/';  //TESTING SERVER
+// export const API_ROOT = 'http://localhost:4000/';  //LOCAL SERVER
+export const API_ROOT = 'https://stephblog-api.herokuapp.com/';  //TESTING SERVER
 
 let token = null;
 const responseBody = res => res.body;
