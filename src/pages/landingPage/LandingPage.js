@@ -56,7 +56,7 @@ export default function LandingPage() {
                   <div className="col-lg-4 col-md-6">
                     <div className="single-blog-post">
                       <div className="blog-image">
-                        <Link to={`/blogs/${blog.id}`}>
+                        <Link to={`/blog/${blog.id}`}>
                           <img
                             src="../assets/images/blog.png"
                             alt="Cover Image"
