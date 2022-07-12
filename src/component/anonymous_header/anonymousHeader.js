@@ -41,7 +41,7 @@ const history = useHistory()
                                 <div class="bg-primary p-4">
                                     <ul className="navbar-nav">
                                         <li className="nav-item border-top">
-                                            <Link to="/blogs/all" className="nav-link text-light font-weight-bold">Blogs</Link>
+                                            <Link to="/" className="nav-link text-light font-weight-bold">Blogs</Link>
                                         </li>
 
                                         {/* <li className="nav-item border-top">
@@ -96,7 +96,7 @@ const history = useHistory()
                             >
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <Link to="/blogs/all" className="nav-link">
+                                        <Link to="/" className="nav-link">
                                             Blogs
                                         </Link>
                                     </li>
