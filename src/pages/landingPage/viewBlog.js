@@ -1,5 +1,6 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
+import AnonymousHeader from '../../component/anonymous_header/anonymousHeader'
 import api from '../../utils/api'
 
 export default function ViewBlog(props) {
@@ -15,17 +16,17 @@ export default function ViewBlog(props) {
 
     return (
         <>
-            {/* <div
+            <AnonymousHeader/>
+            <div
                 className="page-title-area item-bg2 jarallax"
                 data-jarallax='{"speed": 0.3}'
             >
                 <div className="container">
                     <div className="page-title-content">
-                        <h2>Blog</h2>
-                        <p>Our Latest Blogs</p>
+                        <h2>{blogView?.title}</h2>
                     </div>
                 </div>
-            </div> */}
+            </div>
             <br />
             <br />
             <section className="blog-details-area ptb-70">
