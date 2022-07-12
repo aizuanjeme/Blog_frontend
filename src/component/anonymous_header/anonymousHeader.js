@@ -44,7 +44,7 @@ const history = useHistory()
                                             <Link to="/blogs/all" className="nav-link text-light font-weight-bold">Blogs</Link>
                                         </li>
 
-                                        <li className="nav-item border-top">
+                                        {/* <li className="nav-item border-top">
                                             <Link to="/events/active" className="nav-link text-light font-weight-bold">Events</Link>
                                         </li>
 
@@ -65,7 +65,7 @@ const history = useHistory()
                                             >
                                                 Contact
                                             </a>
-                                        </li>
+                                        </li> */}
 
                                         {authenticated && <li className="nav-item border-top py-2">
                                             <Link onClick={logout} className="login-btn text-light font-weight-bold">
@@ -100,7 +100,7 @@ const history = useHistory()
                                             Blogs
                                         </Link>
                                     </li>
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <Link to="/events/active" className="nav-link">
                                             Events
                                         </Link>
@@ -135,19 +135,8 @@ const history = useHistory()
                                         <a href="#contactUs" className="nav-link">
                                             Contact
                                         </a>
-                                    </li>
+                                    </li> */}
                                 </ul>
-                                {authenticated && (
-                                    <div className="others-options mt-3">
-                                        <Link
-                                            to="/dashboard"
-                                            className="login-btn btn-white text-dark rounded p-1 "
-                                        >
-                                            {/* <i className="flaticon-user"></i> */}
-                                            Dashboard
-                                        </Link>
-                                    </div>
-                                )}
 
                                 {authenticated && (
                                     <div className="others-options">
