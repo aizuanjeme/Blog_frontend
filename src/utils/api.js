@@ -73,7 +73,7 @@ const Account = {
     },
     login: (email, password) =>
         requests.post('account/login', { email, password }),
-    register: data =>
+    register: (data) =>
         requests.post('account/register', data),
 }
 
