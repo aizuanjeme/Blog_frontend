@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import "./register.css";
 import api from "../../utils/api";
@@ -9,7 +9,7 @@ import api from "../../utils/api";
 export default function Register() {
     const { handleSubmit, register, formState: { errors }, getValues } = useForm();
     const [password, Setpassword] = useState(false);
-
+const history = useHistory()
     const [item, setItem] = useState({
         firstName: "",
         lastName: "",
@@ -47,6 +47,9 @@ export default function Register() {
         }
         try {
             const r = await api.Account.register(payload)
+            if(r.success){
+                history("/login")
+            }
             console.log("signupData", payload);
         }
         catch (error) {
